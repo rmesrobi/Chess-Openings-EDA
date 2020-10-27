@@ -74,7 +74,34 @@ df['rating_differential'] = abs(df['white_rating'] - df['black_rating'])
 #turns by rating group
 
 
+#plot 1 - rating distribution by white and black
+fig, ax = plt.subplots(1,1, figsize = (10,4))
+colors = {'white': 'yellow', 'black': 'blue', 'draw': 'green'}
+color = ['yellow', 'blue', 'green']
+ax.scatter(df.white_rating, df.black_rating, s = 2, c = df.winner.map(colors), label = colors, alpha = 0.3)
+ax.set_xlabel('white rating')
+ax.set_ylabel('black rating')
+#how to get legend to be color of dot + label like white, blue, grey
 
 
+#new data frame for openings
+openings = df.groupby(['opening_name', 'winner'])['id'].count()
+openings = pd.DataFrame(openings).reset_index()
+openings_df = openings.pivot(index = 'opening_name', columns = 'winner', values = 'id')
+openings_df['total_count'] = openings_df['white'] + openings_df['black'] + openings_df['draw']
+openings_df['black_percent'] = openings_df['black'] / openings_df['total_count']
+openings_df['white_percent'] = openings_df['white'] / openings_df['total_count']
+openings_df['draw_percent'] = openings_df['draw'] / openings_df['total_count']
+openings_df.sort_values(by = 'total_count', ascending = False, inplace = True)
 
+#plot to show winning percentage by white and black for top 10 openings
+#need to update labels and format
+fig, ax = plt.subplots(1,1, figsize = (10,6))
+x_pos = [i for i in reversed(openings_df.index[0:10])]
+wp = np.array(openings_df['white_percent'][0:10])
+bp = np.array(openings_df['black_percent'][0:10])
+dp = np.array(openings_df['draw_percent'][0:10])
+ax.barh(x_pos, wp, color = 'white')
+ax.barh(x_pos, bp, color = 'black', left = wp)
+ax.barh(x_pos, dp, color = 'blue', left = wp + bp)
 
