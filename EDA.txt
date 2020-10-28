@@ -30,9 +30,50 @@ https://en.wikipedia.org/wiki/Elo_rating_system
 
 
 Plan for Tuesday:
-1. win percentage
-2. aggregate by opening
-3. aggregate by first 5 moves
-4. think of 3-5 hypothesis tests that i could do (focus on 2-3)
+1. win percentage - done
+2. aggregate by opening - done
+3. aggregate by first 5 moves - not done
+4. think of 3-5 hypothesis tests that i could do (focus on 2-3) - done
 5. 1 visualization of the chess board - final piece placement or openings
 6. Hypo - correlation between 1st and 2nd move between rating categories
+
+Plan for Wednesday:
+1. Establish hypotheses
+2. Create cat code table to run corr
+3. Visualization of chess board
+
+
+Hypo 1 : Chess Fundamentals
+Question: Does the first mover advantage apply to players of different ranking categories?
+H0 = First mover advantage applies to all rankings equally
+Ha = First mover advantage does differ between groups
+Test:
+1. compare white win rates across ranking categories
+To do:
+1. create groups for players - done - used FIDE rating
+
+Hypo 2: Chess Fundamentals
+Question: Does ranking accurately depict skill across ranking groups?
+H0 = Player ranking differential accurately depicts skill across groups
+Ha = Ranking differential does not accurately depict outcome.
+Test:
+1. compare ranking differential to win / loss between groups
+To do:
+1. create ranking differential column - done
+
+Hypo 3: Psychology
+Question: Do lower ranked players resign earlier than higher ranked players?
+H0 = Players resign at the same rate
+Ha = Players resign at different rates across groups
+To do:
+
+Hypo 4: Chess Fundamentals
+Question: Do all squares matter? 
+H0 = All squares are of equal importance to control
+Ha = Some squares are more important to control than others
+To do:
+
+Hypo 5: Chess Fundamentals
+Question: Which turn is the most important in the game?
+H0 = All turns carry equal importance
+Ha = There are one or more turns that disproportionately affect the outcome of the game.
