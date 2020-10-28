@@ -51,9 +51,11 @@ Test:
 1. compare white win rates across ranking categories
 To do:
 1. create groups for players - done - used FIDE rating
+2. create smaller number of groupings
 
-Hypo 2: Chess Fundamentals
+Hypo 2: Chess Fundamentals - hold 
 Question: Does ranking accurately depict skill across ranking groups?
+Linear relationship between rating and win probability
 H0 = Player ranking differential accurately depicts skill across groups
 Ha = Ranking differential does not accurately depict outcome.
 Test:
@@ -67,13 +69,26 @@ H0 = Players resign at the same rate
 Ha = Players resign at different rates across groups
 To do:
 
-Hypo 4: Chess Fundamentals
+Hypo 4: Chess Fundamentals - hold
 Question: Do all squares matter? 
 H0 = All squares are of equal importance to control
 Ha = Some squares are more important to control than others
 To do:
 
-Hypo 5: Chess Fundamentals
+Hypo 5: Chess Fundamentals - underspecified - hold
 Question: Which turn is the most important in the game?
 H0 = All turns carry equal importance
 Ha = There are one or more turns that disproportionately affect the outcome of the game.
+
+Hypo 6: Chess Fundamentals
+Question: What's the best counter for e4? Is it the same across all player groupings?
+H0 = The best counter is _ and is played equally by all groupings
+Ha = 
+
+
+
+
+relationship between opening / number of turns / and win / loss percentage
+opening relationship with rating and over time
+
+nm vs lower ranked but not beginner - percentage distribution of openings by ranking
