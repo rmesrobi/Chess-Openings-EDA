@@ -1,0 +1,38 @@
+The purpose of this document is to summarize the findings and questions that arose during my EDA.
+
+
+Questions:
+1. How does activity and inactivity effect gameplay? 
+Does inactivity effect lower ranked players more than higher ranked players?
+2. Model the distribution of the elo rating across the unique players or across time?
+
+
+
+
+Findings:
+1. moves column will need to be manipulated into an array or dictionary
+2. Elo rating system - theoretical mean of 1500 with a standard deviation of 200
+3. Create skill groups - beginner, novice, and experts - maybe more buckets?
+4. Use novice group as control group? Investigate memory, problem solving, 
+decision making, pattern recognition, and object recognition.
+5. Performance of groups to other groups when encountering the Einstellung effect
+
+
+Cleaning:
+1. Remove duplicate ids
+df_1 = df.drop_duplicates(subset = ['id'])
+2. Create list of moves
+df.moves = df.moves.apply(lambda x: x.split(' '))
+3. Create game category (rapid, blitz, bullet)
+4. Create rating category
+
+https://en.wikipedia.org/wiki/Elo_rating_system
+
+
+Plan for Tuesday:
+1. win percentage
+2. aggregate by opening
+3. aggregate by first 5 moves
+4. think of 3-5 hypothesis tests that i could do (focus on 2-3)
+5. 1 visualization of the chess board - final piece placement or openings
+6. Hypo - correlation between 1st and 2nd move between rating categories
