@@ -51,7 +51,7 @@ Test:
 1. compare white win rates across ranking categories
 To do:
 1. create groups for players - done - used FIDE rating
-2. create smaller number of groupings
+2. create smaller number of groupings - done
 
 Hypo 2: Chess Fundamentals - hold 
 Question: Does ranking accurately depict skill across ranking groups?
@@ -89,6 +89,8 @@ Ha =
 
 
 relationship between opening / number of turns / and win / loss percentage
-opening relationship with rating and over time
+opening relationship with rating and over time - not a lot of time
 
 nm vs lower ranked but not beginner - percentage distribution of openings by ranking
+
+relationship between rating difference and turns
