@@ -78,7 +78,7 @@ The dataset included datetime information, which was useful to interpret changes
 The next chart shows the distribution of player ratings by piece color (white and black). Overall, the distribution of players between these two groups was fairly even.
 
 <p align="center">
-    <img src="images/distribution_of_player_ratings_by_piece_color.png" width='700'/>
+    <img src="images/distribution_of_player_ratings_by_piece_color.png" width='600'/>
 </p>
 
 <div align = 'center'>
@@ -145,7 +145,7 @@ The Sicilian Defense is the most commonly used opening in the dataset. To gain a
 The Sicilian Defense is a strategy by black that creates an unbalanced game with many attacking scenarios. The graph below illustrates the winning percentage of this opening by ranking group.
 
 <p align="center">
-    <img src="images/win_rate_of_sicilian.png" width='700'/>
+    <img src="images/win_rate_of_sicilian.png" width='600'/>
 </p>
 
 As you can see, the Sicilian is an excellent opening if you are playing as black and are a master. If you're a beginner, you might want to try another strategy.
