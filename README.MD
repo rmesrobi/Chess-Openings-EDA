@@ -50,3 +50,12 @@ Most of the columns in the dataset are categorical. I loaded the file (csv forma
 4. Opening Name: created a simplified opening name structure by dropping opening name variations.
 5. Winner: created numerical columns to categorize outcome by white, black, or draw.
 6. Start Time: created new date column in datetime format
+
+## Questions
+
+As an avid chess player, my goals were to perform EDA, calculate the probability of success after each move, and recommend moves based on the outcomes of similar games.
+
+I quickly realized that I needed to simplify my goals and focused my analysis on answering more basic questions, such as: which opening is most common and is the probability of winning affected by player ranking and piece color.
+
+## Visualization
+
