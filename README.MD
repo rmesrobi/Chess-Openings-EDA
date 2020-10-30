@@ -1,6 +1,8 @@
 # I'll Be Sicilian You Later!
 
-
+<p align="center">
+    <img src="images/cat_dog.gif" width='500'/>
+</p>
 
 ## Table of Contents
 1. Overview
@@ -20,12 +22,12 @@ Chess strategy consists of setting and achieving long-term positioning advantage
 ## Data Set
 
 <p align="center">
-    <img src="images/df_head.png" width='500'/>
+    <img src="images/df_head.png" width='700'/>
 </p>
 
 The analysis is based on the Chess Game Dataset (Lichess), which includes data from nearly 20,000 games from a selection of users on Lichess.org. General information about the dataset can be found below:
 
-### General Info:\
+### General Info:
 Game ID: object\
 Rated (T/F): bool\
 Start Time: float64\
@@ -41,7 +43,7 @@ Black Player Rating: int64\
 All Moves in Standard Chess Notation: object\
 Opening Eco (Code for any given opening): object\
 Opening Name: object\
-Opening Ply (Number of moves in opening phase): int64\
+Opening Ply (Number of moves in opening phase): int64
 
 ### Cleaning
 Most of the columns in the dataset are categorical. I loaded the file (csv format) into a pandas dataframe and performed the following cleaning procedures. A link to a jupyter notebook containing my python code can be found [HERE](chess_EDA_Final.ipynb).
@@ -58,7 +60,7 @@ Start Time: created new date column in datetime format
 As an avid chess player, my goals were to perform EDA, calculate the probability of success after each move, and recommend moves based on the outcomes of similar games.
 
 <p align="center">
-    <img src="images/huh.gif" width='300'/>
+    <img src="images/huh.gif" width='400'/>
 </p>
 
 
@@ -70,50 +72,56 @@ The dataset included datetime information, which was useful to interpret changes
 
 
 <p align="center">
-    <img src="images/openings_turns_ratings_by_year.png" width='400'/>
+    <img src="images/openings_turns_ratings_by_year.png" width='700'/>
 </p>
 
 The next chart shows the distribution of player ratings by piece color (white and black). Overall, the distribution of players between these two groups was fairly even.
 
 <p align="center">
-    <img src="images/distribution_of_player_ratings_by_piece_color.png" width='400'/>
+    <img src="images/distribution_of_player_ratings_by_piece_color.png" width='700'/>
 </p>
 
-<p>
 <div align = 'center'>
+
 white rating mean: 1597
 
 black rating mean: 1590
-<div>
+
+</div>
 
 
 The graph below provides an alternate visualization; however, this time the distribution is grouped by ranking category. You will notice that there are far more beginners and novices than experts and masters.
 
 <p align="center">
-    <img src="images/distribution_of_ratings_by_game_and_group.png" width='500'/>
+    <img src="images/distribution_of_ratings_by_game_and_group.png" width='700'/>
 </p>
 
 Next, I wanted to better understand win ratios. According to the dataset, white wins more often than black:
 
-*white win: 50%*\
-*black win: 45%*\
+<div align = 'center'>
+
+*white win: 50%*
+
+*black win: 45%*
+
 *draws: 5%*
 
+</div>
 
 Grouping the dataframe by ranking category and piece color provided a better breakdown of wins and losses and whether the overall win ratio was skewed by a select group of players or category of players. The charts below highlight the first mover advantage, since white pieces move first. Each category won as white more often than as black. The difference in win ratios as Beginners, Novices, Experts, and Masters were 4.9%, 4.8%, 0.3%, and 1.0%, respectively.
 
 <p align="center">
     <img src="images/white_wins_by_group.png" 
-    width='250'/>
+    width='400'/>
     <img src="images/black_wins_by_group.png" 
-    width='250'/>
+    width='400'/>
 </p>
 
 To test the first mover advantage I performed a two sample approximate test of population proportions (e.g. the kickflip test). The two populations I tested were Beginners playing as White and Beginners playing as Black.
 
-White Beginner Wins / Frequency of Win: 1943 / 0.41
-Black Beginner Wins / Frequency of Wins: 1768 / 0.36
-Difference in Sample Proportions: 0.05
+White Beginner Wins / Frequency of Win: 1943 / 0.41\
+Black Beginner Wins / Frequency of Wins: 1768 / 0.36\
+Difference in Sample Proportions: 0.05\
 p-value: 0.00000041
 
 Conclusion: If you are a beginner and want to win more often then you should play with white pieces.
@@ -124,20 +132,20 @@ Conclusion: If you are a beginner and want to win more often then you should pla
 Openings are a very important part of chess strategy. A chess opening is the group of initial moves of the game. These recognized sequences are given names such as the Ruy Lopez or Sicilian Defense. The fundamental strategy of an opening is to develop pieces, control the center, move the king to safety, and maintain pawn structure. The dataset included 1,477 unique openings! To simplify, I consolidated each variation into its parent, or main opening.
 
 <p align="center">
-    <img src="images/top_20_openings.png" width='400'/>
+    <img src="images/top_20_openings.png" width='700'/>
 </p>
 
 The Sicilian Defense is the most commonly used opening in the dataset. To gain a better understanding of top openings, I sorted the grouping by most frequently played by the Master category. The graph below highlights the top 20 most frequently used openings by chess masters.
 
 <p align="center">
-    <img src="images/top_20_openings_master_sorted.png" width='400'/>
+    <img src="images/top_20_openings_master_sorted.png" width='700'/>
 </p>
 
 
 The Sicilian Defense is a strategy by black that creates an unbalanced game with many attacking scenarios. The graph below illustrates the winning percentage of this opening by ranking group.
 
 <p align="center">
-    <img src="images/win_rate_of_sicilian.png" width='400'/>
+    <img src="images/win_rate_of_sicilian.png" width='700'/>
 </p>
 
 As you can see, the Sicilian is an excellent opening if you are playing as black and are a master. If you're a beginner, you might want to try another strategy.
