@@ -60,7 +60,7 @@ Start Time: created new date column in datetime format
 As an avid chess player, my goals were to perform EDA, calculate the probability of success after each move, and recommend moves based on the outcomes of similar games.
 
 <p align="center">
-    <img src="images/huh.gif" width='400'/>
+    <img src="images/genius.gif" width='400'/>
 </p>
 
 
