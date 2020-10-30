@@ -1,7 +1,7 @@
 ## I'll Be Sicilian You Later!
 
 <p align="center">
-    <img src="chess.gif" width='700'/>
+    <img src="chess2.gif" width='700'/>
 </p>
 
 ## Table of Contents
