@@ -59,3 +59,40 @@ I quickly realized that I needed to simplify my goals and focused my analysis on
 
 ## Visualization
 
+The dataset included datetime information, which is useful to visualize how the game of chess has changed over time. The graph below illustrates how the number of moves per opening has increased from 2013 to 2017. This could be due to the increase in average player rating and also could have an affect on the average number of turns per game.
+
+The graph below illustrates how the number of moves per opening has increased from 2013 to 2017. 
+
+[insert Openings, Turns, and Ratings by Year]
+
+The next graph shows the distribution of players by rating category. Overall, the distribution of players between white and black pieces was fairly even. The mean for white players was 1597, whereas the mean for black players was 1590.
+
+[insert Distribution of Player Ratings by Piece Color]
+[insert Distribution of Ratings by Game and Rating Group]
+
+Openings are a very important part of chess strategy. 
+
+[insert Top 20 Most Frequently Played Openings by Rating Group]
+
+Chess Masters win more frequently than Experts, Novices, and Beginners. The graph below highlights the top 20 most frequently used openings by this category.
+
+[insert Top 20 Most Frequently Played Openings by Rating Group (sorted by master group)]
+
+[insert Top 20 Master group by % played]
+
+The Sicilian Defense is a strategy by black that creates an unbalanced game with many attacking scenarios. The graph below illustrates the winning percentage of this opening by ranking group.
+
+[insert Win Rate of Sicilian Opening by Group]
+
+The Master Group wins more frequently than the others. To test this I implored a t-test between the the master level and novice level. 
+
+[insert t-test statistics]
+
+To expand this concept more broadly, I compared the winning percentages of the rating groups based on whether they were white or black. 
+
+[insert White Wins]
+[insert Black Wins]
+
+These graphs highlight the first mover advantage, since white pieces move first. Each category won as white more often than as black. The difference in win ratio by Beginners, Novices, Experts, and Masters was 4.9%, 4.8%, 0.3%, and 1.0%, respectively.
+
+To test this I performed a two sample approximate test of population proportions. To set this up I looked at the winning games for beginners playing as white and black. My hypothesis was that a beginner wins an equal amount of games as white and black. In other words, Pbw <= Pbb. 
