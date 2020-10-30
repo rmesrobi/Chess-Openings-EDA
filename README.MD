@@ -153,7 +153,7 @@ As you can see, the Sicilian is an excellent opening if you are playing as black
 
 ### Conclusion
 
-Like playing chess, analyzing chess datasets can be complicated. The [Kaggle dataset](https://www.kaggle.com/datasnaek/chess/discussion) is a great resource for those seeking to detect patterns in behavior. I found the dataset to be very interesting and would like to pursue further analysis on:
+Like playing chess, analyzing chess datasets can be complicated. The [Kaggle dataset](https://www.kaggle.com/datasnaek/chess/discussion) is a great resource for those seeking to detect patterns in user behavior. I found the dataset to be very interesting and would like to pursue further analysis on:
 
 1. Understanding player behavior / psychology regarding victory status (when to resign / continue)
 2. Predicting winning patterns / moves in real-time
