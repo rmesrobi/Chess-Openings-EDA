@@ -1,4 +1,8 @@
-## CHESS EDA
+## I'll Be Sicilian You Later!
+
+<p align="center">
+    <img src="chess.gif" width='700'/>
+</p>
 
 ## Table of Contents
 1. Overview
@@ -67,35 +71,58 @@ The graph below illustrates how the number of moves per opening has increased fr
     <img src="images/Openings, Turns, and Ratings.png" width='700'/>
 </p>
 
-
-
 The next graph shows the distribution of players by rating category. Overall, the distribution of players between white and black pieces was fairly even. The mean for white players was 1597, whereas the mean for black players was 1590.
 
-[insert Distribution of Player Ratings by Piece Color]
-[insert Distribution of Ratings by Game and Rating Group]
+<p align="center">
+    <img src="images/distribution_of_player_ratings_by_piece_color.png" width='700'/>
+</p>
+
+<p align="center">
+    <img src="images/distribution_of_ratings_by_game_and_ranking_group.png" width='700'/>
+</p>
+
+## Part 2
 
 Openings are a very important part of chess strategy. 
 
-[insert Top 20 Most Frequently Played Openings by Rating Group]
+<p align="center">
+    <img src="images/top_20_most_frequently_played_openings_by_rating_group.png" width='700'/>
+</p>
+
 
 Chess Masters win more frequently than Experts, Novices, and Beginners. The graph below highlights the top 20 most frequently used openings by this category.
 
-[insert Top 20 Most Frequently Played Openings by Rating Group (sorted by master group)]
+<p align="center">
+    <img src="images/top_20_most_frequently_played_openings_by_rating_group_sorted_master.png" width='700'/>
+</p>
 
-[insert Top 20 Master group by % played]
+<p align="center">
+    <img src="images/top_20_most_frequently_played_openings_by_rating_group_sorted_master_%.png" width='700'/>
+</p>
 
 The Sicilian Defense is a strategy by black that creates an unbalanced game with many attacking scenarios. The graph below illustrates the winning percentage of this opening by ranking group.
 
-[insert Win Rate of Sicilian Opening by Group]
+<p align="center">
+    <img src="images/win_rate_of_sicilian_opening_by_group.png" width='700'/>
+</p>
 
-The Master Group wins more frequently than the others. To test this I implored a t-test between the the master level and novice level. 
 
-[insert t-test statistics]
+The Master Group wins more frequently than the others. To test the independence of win ratio by group I performed a two-sided t-test between the average win rates between the Masters group and the Novice group. The mean win ratio for Masters and Novices was 68% and 47%, respectively. 
+
+statistic = 1.579
+pvalue = 0.115
+
 
 To expand this concept more broadly, I compared the winning percentages of the rating groups based on whether they were white or black. 
 
-[insert White Wins]
-[insert Black Wins]
+<p align="center">
+    <img src="images/win_rate_of_sicilian_opening_by_group.png" width='700'/>
+</p>
+
+<p align="center">
+    <img src="images/black_wins_by_group.png" width='700'/>
+</p>
+
 
 These graphs highlight the first mover advantage, since white pieces move first. Each category won as white more often than as black. The difference in win ratio by Beginners, Novices, Experts, and Masters was 4.9%, 4.8%, 0.3%, and 1.0%, respectively.
 
