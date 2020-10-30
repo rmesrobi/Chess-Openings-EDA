@@ -79,29 +79,32 @@ The next chart shows the distribution of player ratings by piece color (white an
     <img src="images/distribution_of_player_ratings_by_piece_color.png" width='400'/>
 </p>
 
-
+<p>
 <div align = 'center'>
-*white rating mean: 1597*\
-*black rating mean: 1590*
+white rating mean: 1597
+
+black rating mean: 1590
 <div>
 
 The graph below provides an alternate visualization; however, this time the distribution is grouped by ranking category.
 
 <p align="center">
-    <img src="images/distribution_of_ratings_by_game_and_ranking_group.png" width='500'/>
+    <img src="images/distribution_of_ratings_by_game_and_group.png" width='500'/>
 </p>
 
 Next, I wanted to better understand win ratios. According to the dataset, white wins more often than black:
 
-*white win: 50%
+*white win: 50%*\
 *black win: 45%*\
 *draws: 5%*
 
 Grouping the dataframe by ranking category and piece color provided a better breakdown of wins and losses and whether the overall win ratio was skewed by a select group of players or category of players.
 
 <p align="center">
-    <img src="images/white_wins_by_group.png" width='250'/>
-    <img src="images/black_wins_by_group.png" width='250'/>
+    <img src="images/white_wins_by_group.png" 
+    width='250'/>
+    <img src="images/black_wins_by_group.png" 
+    width='250'/>
 </p>
 
 If you're a beginner, be prepared to lose, a lot. The Master Group wins more frequently than the others. To test the independence of win ratio by group I performed a two-sided t-test between the average win rates between the Masters group and the Novice group. The mean win ratio for Masters and Novices was 68% and 47%, respectively. 
@@ -117,24 +120,25 @@ Openings are a very important part of chess strategy. A chess opening is the gro
 The dataset included 1,477 unique openings!
 
 <p align="center">
-    <img src="images/top_20_most_frequently_played_openings_by_rating_group.png" width='700'/>
+    <img src="images/distribution_of_ratings_by_game_and_group.png" width='700'/>
 </p>
+
 
 
 Chess Masters win more frequently than Experts, Novices, and Beginners. The graph below highlights the top 20 most frequently used openings by this category.
 
 <p align="center">
-    <img src="images/top_20_most_frequently_played_openings_by_rating_group_sorted_master.png" width='700'/>
+    <img src="images/top_20_openings.png" width='400'/>
 </p>
 
 <p align="center">
-    <img src="images/top_20_most_frequently_played_openings_by_rating_group_sorted_master_%.png" width='700'/>
+    <img src="images/top_20_openings_master_sorted.png" width='400'/>
 </p>
 
 The Sicilian Defense is a strategy by black that creates an unbalanced game with many attacking scenarios. The graph below illustrates the winning percentage of this opening by ranking group.
 
 <p align="center">
-    <img src="images/win_rate_of_sicilian_opening_by_group.png" width='700'/>
+    <img src="images/win_rate_of_sicilian.png" width='400'/>
 </p>
 
 
