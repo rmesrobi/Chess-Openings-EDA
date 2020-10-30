@@ -63,7 +63,10 @@ The dataset included datetime information, which is useful to visualize how the 
 
 The graph below illustrates how the number of moves per opening has increased from 2013 to 2017. 
 
-![Graph of Openings, Turns, and Ratings](/images/Openings, Turns, and Ratings.png)
+<p align="center">
+    <img src="images/Openings, Turns, and Ratings.png" width='700'/>
+</p>
+
 
 
 The next graph shows the distribution of players by rating category. Overall, the distribution of players between white and black pieces was fairly even. The mean for white players was 1597, whereas the mean for black players was 1590.
